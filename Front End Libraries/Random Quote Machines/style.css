@@ -1,0 +1,50 @@
+html {
+	background-color: #FFCC80;
+	background-image: linear-gradient(90deg, rgba(220,0,255,1) 0%, rgba(255,151,0,1) 100%);
+	font-family: sans-serif;
+	color: white;
+}
+
+body {
+	min-height:97vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#container {
+	box-sizing: border-box;
+	padding: 5px;
+	heihgt:80vh;
+	max-width:550px;
+	background-color: rgba(0,0,0,0.6);
+	align-self: center;
+}
+
+h2 {
+	font-weight: normal;
+}
+
+#text, #author, #buttons {
+	padding: 0px 20px 20px 20px;
+}
+#author {
+	text-align: right;
+}
+
+button, a {
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	border: 0;
+	font-size: 14px;
+	height:50px;
+	width: 100px;
+	line-height: 50px;
+}
+
+button:hover, a:hover {
+	background-color: rgba(0,0,0,1);
+	cursor: pointer;
+}
