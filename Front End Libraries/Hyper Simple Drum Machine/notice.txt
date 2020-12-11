@@ -1,5 +1,0 @@
-This website is also available on my CodePen.
-
-This might make it easier to view, since you don't have to set up an environment for React.
-
-https://codepen.io/claucambra
