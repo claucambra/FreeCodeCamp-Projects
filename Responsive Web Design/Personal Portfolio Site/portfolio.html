@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Portfolio Demo</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <h1>Claudio Cambra</h1>
+    <div id="link-box">
+      <a class="nav-link" href="">Home</a>
+      <a class="nav-link" href="">Blog</a>
+      <a class="nav-link" href="">About me</a>
+      <a class="nav-link" href="#projects">Projects</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Portfolio</h1>
+
+    <section id="welcome-section">
+      <div class="introshowcase" id="technical-intro">
+        <h1>Technical</h1>
+        <p>I have held a lifelong interest in technology. To give you an idea: I learned to read and write at the age of two by typing things into Google and seeing what came up. Below you'll find several examples of my experience in this industry.</p>
+        <p> I am and always have been a techie, interested in tinkering with gadgets and seeing how they work. Having grown up using the creations of passionate software developers like Linus Torvalds, I am keen to become one myself and to create software that others will love.</p>
+        <img class="top-pic" src="images/giphy1.gif">
+      </div>
+
+      <div class="introshowcase" id="writing-intro">
+        <h1>Writing</h1>
+        <p>I have had years of experience in the publishing industry. I have written about a variety of topics such as film and videogames, but mainly about technology.</p>
+        <p>I am and always have written about being a techie, spreading the word about the most interesting gadgets I got my hands on. Having grown up using the creations of passionate software developers like Linus Torvalds, I am keen to spread the word about software that others will love.</p>
+        <img class="top-pic" src="images/giphy2.gif">
+      </div>
+
+    </section>
+
+    <h1>Published Work</h1>
+    <section id="projects">
+      <div class="project-tile" id="codethink-tile" onclick="tileExpand(this)">
+        <img src="images/logo-CT.svg">
+        <div class="tile-text" id="codethink-text">
+          <h2 class="tile-title">Codethink</h2>
+          <p>The publically-accessible articles I wrote during my 3-month internship at Codethink can be found either on <a href="https://www.codethink.co.uk/author/claudio-cambra.html" target="_blank">their blog</a> or on <a href="https://www.linkedin.com/in/claudio-c-140760a1/" target="_blank">my LinkedIn.</a></p>
+          <ul>
+            <li>I was tasked with <em>writing articles on various complex technologies</em>, and subjects related to the software industry as a whole. <strong>Examples include articles on Fortran, Board Support Packages, FPGAs, Linux distributions, and more.</strong></li>
+            <li><strong>These articles attracted the attention of online open-source development communities.</strong> In the 12 weeks following my arrival, the number of <strong>average monthly unique visitors to Codethink's blog more than doubled</strong> in respect to the prior 5 months of 2019. This stemmed from a significant growth in readers from developer communities on Reddit.</li>
+          </ul>
+          <p></p>
+        </div>
+      </div>
+
+      <div id="lm-tile" class="project-tile" onclick="tileExpand(this)">
+        <img src="images/logo-LM.png">
+        <div class="tile-text" id="lm-text">
+          <h2 class="tile-title">Linux Magazine</h2>
+          <p>Some of the articles I have written for Linux Magazine International are freely-accessible and can be found below.</p>
+          <p><a href="https://www.linux-magazine.com/Issues/2015/179/Android-Alternatives" target="_blank">‘The Good, the Bad and the Ugly’</a>: article exploring other open source alternatives to Android. Originally on Linux Magazine issue 179.</p>
+          <p><a href="https://www.linux-magazine.com/Issues/2018/211/Mycroft" target="_blank">‘Hey Mycroft’</a>: article exploring Mycroft, an open source virtual assistant. Originally on Linux Magazine issue 211.</p>
+          <p>I have written several articles for Linux Magazine International <strong>exploring key areas of open source software and technologies.</strong> Some of my articles have been featured on the cover of the magazine. <strong>Examples include articles analysing open-source alternatives to iOS and Android, and coverage of open-source AI virtual assistants.</strong></p>
+        </div>
+      </div>
+
+      <div id="pm-tile" class="project-tile" onclick="tileExpand(this)">
+        <img src="images/logo-PM.png">
+        <div class="tile-text" id="pm-text">
+          <h2 class="tile-title">Pi Media</h2>
+          <p>Articles published online can be found <a href="https://uclpimedia.com/online?author=5d3f55ae98ec4a000110df7a" target="_blank">here.</a></p>
+          <p>I have written about a variety of topics in the <strong>Science and Technology section</strong> and edited a number of articles for this division of the magazine. My articles mainly pertain to the <strong>role of technology in our current lives. Examples include articles analysing the growing importance of AI voice assistants, and the apparent trends of the technology industry in 2017.</strong> I wrote for both online and physical editions of the magazine.</p>
+        </div>
+      </div>
+    </section>
+
+    <h1>Technical Profiles</h1>
+    <section id="profiles">
+      <a id="profile-link" href="https://www.freecodecamp.org/claucambra" target="_blank">FreeCodeCamp Profile</a>
+      <a id="profile-link" href="https://github.com/elChupaCambra" target="_blank">GitHub Profile</a>
+    </section>
+  </main>
+
+</body>
+
+<script src="tileExpand.js"></script>
+
+</html>
