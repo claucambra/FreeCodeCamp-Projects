@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>FPGA Intro Documentation Demo</title>
+		<link rel="stylesheet" href="fpga-style.css">
+	</head>
+
+	<body>
+
+	<div class="topHeader">
+	<button class="sidebarButton" onclick="oneButton()">Open Sidebar</button>
+	<h1>FPGAs</h1>
+	</div>
+
+	<nav id="navbar">
+		<header>
+			<h1>Field Programmable<br>Gate Arrays (FPGAs)</h1>
+		</header>
+			<a id="nav-link" href="#introduction">Introduction</a><br>
+			<a id="nav-link" href="#languages">Programming Languages</a><br>
+			<a id="nav-link" href="#features">Key Features</a><br>
+			<a id="nav-link" href="#alternatives">FPGAs vs. CPLDs and ASICs</a><br>
+			<a id="nav-link" href="#uses">Uses</a><br>
+	</nav>
+
+	<main id="main-doc">
+		<section class="main-section" id="introduction">
+		<header>
+		<h1>Introduction<h1>
+		</header>
+		<p>You might have heard the term ‘FPGA’ thrown around every now and again. In several areas of the tech industry their use is growing -- particularly in automotive, aerospace, and medical applications.</p>
+		<p>To understand why they are becoming so popular we must go back to what they are: FPGAs, (Field Programmable Gate Arrays) are programmable logic devices that can have their functionality dictated by software (or as the engineers like to call this type of low-level software, firmware). The interesting thing about FPGAs is that this software can be altered or even replaced entirely while it is still in the circuit, meaning that its functionality can be drastically updated without taking apart or stopping whatever machine it is in.<p>
+		</section>
+		<section class="main-section" id="languages">
+		<header>
+		<h1>Programming Languages</h1>
+		</header>
+		<p>To program these devices, most engineers use Verilog, a hardware description language that is pretty close to the metal. It is specifically used to model hardware, and even allows the developer to designate specific wires, gates, clock, etc. It is similar to C syntactically, and quite efficient. Since it allows programmers to be so specific with what the hardware does, engineers can employ FPGAs for a number of different tasks.</p>
+		<div class="dual-pane">
+		<code>
+		  //C<br>
+		  #include &ltstdio.h&gt<br>
+		  int main() {<br>
+		  &nbsp&nbsp&nbsp&nbsp// printf() displays the string inside quotation<br>
+		  &nbsp&nbsp&nbsp&nbspprintf("Hello, World!");<br>
+		  &nbsp&nbsp&nbsp&nbspreturn 0;<br>
+		  }
+		</code>
+		<code>
+		  //VERILOG<br>
+		  module hello_world ;<br>
+
+		  initial begin<br>
+		  &nbsp&nbsp&nbsp&nbspdisplay ("Hello, World!");<br>
+		  &nbsp&nbsp&nbsp&nbsp10 $finish;<br>
+		  end<br>
+		  endmodule // End of Module hello_world<br>
+		</code>
+		</div>
+		</section>
+		<section class="main-section" id="features">
+		<header>
+		<h1>Key Features</h1>
+		</header>
+		<div class="dual-pane">
+		<ul>
+		  <li>Alterable function while remaining in circuit</li>
+		  <li>Great flexibility compared to alternatives</li>
+		  <li>Consists of configurable logic blocks (CLBs)</li>
+		  <li>Affordable compared to alternatives in low-volumes</li>
+		  <li>Effective in parallel workloads</li>
+		</ul>
+		<img id="panepic1" src="https://www.codethink.co.uk/theme/images/fpgaboard-wikipedia-cc.png">
+		</div>
+		<p>FPGAs are not just easy to upgrade, they are also extremely flexible. An FPGA’s programmable logic components can consist of a variety of different modules like logic gates (or logic blocks, i.e. lots of logic gates clumped together), memory elements (or memory blocks), and more. Since they are also all programmable, this means FPGAs can be adapted to deal with a huge number of applications.</p>
+
+		<p>FPGAs are called logic devices because they can perform logic functions -- this is thanks to their CLBs (Configurable Logic Blocks). These CLBs contain LUTs (Look-Up Tables), which allow the FPGA to perform logic functions without needing the board to be fitted with physical logic gates.</p>
+
+		<p>Logic gates are the essential building block of all digital circuits; they work by providing electrical outputs according to different electrical inputs. There are seven basic types of basic logic gates, and all of them have two inputs and one output (except one of them, which has only one input). Since they react on whether there is an electrical input or not, they work in binary -- and thus the inputs and outputs are interpreted as either 0 or 1. Sticking a bunch of them together allows engineers to create circuits capable of arithmetic functions, and from there they can go to the Moon (literally).</p>
+
+		<img src="https://www.codethink.co.uk/articles/2019/engineerings-jack-of-all-trades-an-intro-to-fpgas/comic.png">
+
+		<p>Logic devices of some sort form the basis of almost all of the electronics that we use today, though obviously the functions that each performs varies wildly. FPGAs are not, however, the only logic devices in use today: there are also Complex Programmable Logic Devices (CPLDs) and Application Specific Integrated Circuits (ASICs). Each has different uses.</p>
+		</section>
+
+		<section class="main-section" id="alternatives">
+		<header>
+		<h1>FPGAs vs. CPLDs and ASICs</h1>
+		</header>
+		<p>CPLDs are simpler than FPGAs, and are constituted of programmable AND/OR logic gate arrays and macrocells. This new component, macrocells, are the main building blocks of these devices, and contain complex logic operations (combinations of logical operators like AND, OR, etc.) and the logic necessary for implementing disjunctive normal form expressions (in a sentence, the grammar of how logic operations are written in code and how to decipher it into terms the CPLD can understand). CPLDs are smaller, simpler, and slower than FPGAs and are meant for simple applications like discretely fixing issues in wider hardware systems, especially since they are cheaper and less power-hungry than FPGAs.</p>
+		<p>ASICs are integrated circuits specifically built for a single application, and are extremely common in electronic devices. This is because they are much faster at specific tasks than FPGAs and also tend to be smaller and more power-efficient. In low volumes they are, however, much more expensive, and require high volume orders to make the per-unit price affordable since they are custom-designed chips.</p>
+		</section>
+
+		<section class="main-section" id="uses">
+		<header>
+		<h1>Uses</h1>
+		</header>
+		<p>Having gotten that out of the way, back to FPGAs. Occupying the middle ground between ASICs and CPLDs, they are both powerful enough and flexible enough to be used for a surprising amount of applications. Their flexibility and affordability makes them extremely useful for prototyping electronic devices, for example. Though ASICs are faster at specific tasks, their higher initial cost means they are usually reserved for use in final products, and FPGAs are used in their place to simulate what the ASIC will do. Codethink engineer (and FPGA expert) Ben Brewer recalled how, for one of his university projects, he was tasked with designing his own CPU; because of the prohibitive cost of manufacturing a single CPU, he instead opted to use an FPGA to create a ‘soft core’ processor that simulated what were to be the theoretical CPU’s functions. FPGAs have also been used for designing RISC-V soft core CPUs in a bid to promote the adoption of the architecture.</p>
+		<p>Applications for FPGAs extend beyond the prototyping stage. They are often used in situations where long-term maintenance and upgrades are essential to the machine they will be included in, and especially in those where upgrades must be done in the field while the machine is still in operation. This is why you will often find FPGAs in fighter jets, tanks, and satellites, used to connect the ASICs handling specific functions (i.e. RADARs on a fighter jet). Because FPGAs can be upgraded without disconnecting them from their circuits, entirely new functions can be added to vehicles (i.e. new cameras on the jet) easily and quickly via firmware updates. They are also seeing increasing use in automotive applications where developments in software can help improve the vehicle’s capabilities. This is especially the case in image recognition systems in cars, with FPGAs allowing the effectiveness and performance of these systems to grow through updates.</p>
+		<p>Due to the way that they are designed they also work well for parallel workloads (those in which several bits of data come at once, rather than in a steady single stream). That’s why we used them in our brain scanner project, as FPGAs could handle the data coming from a myriad of sensors all at once. This is also useful for debugging buses and serial interfaces.</p>
+		<p>So FPGAs are useful, although obviously how useful depends on common sense. In high volumes, sequential workloads, and applications where upgradability or flexibility aren’t a requirement, ASICs are simply the better choice. There are just some situations, though, where FPGAs make sense -- and it seems that the number of those situations are increasing. It is worth getting comfortable with how the logic devices work; they are likely come in handy for an engineering project at some point.</p>
+		</header>
+	</main>
+
+	<footer>
+	<p>CC. Site designed 2020. Content from 2019.</p>
+	</footer>
+
+	<script src="sidebar.js"></script>
+
+	</body>
+
+</html>
