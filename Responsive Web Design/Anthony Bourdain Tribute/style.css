@@ -1,0 +1,174 @@
+html {
+  color: white;
+  font-family: serif;
+}
+
+body {
+  background-color: black;
+  max-width:1050px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+header {
+  margin: 60px 0px 30px 0px;
+  text-align: center;
+}
+
+header h1 {
+  padding: 5px 5px 5px 5px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+}
+
+header button {
+  color:white;
+  background-color:black;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1200px) {
+    article {
+    padding: 30px 80px 30px 80px;
+  }
+  .intro {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 60px;
+  }
+  
+  .introtext {
+    margin-top:-20px;
+  }
+  .introcaption {
+    text-align: right;
+  }
+}
+
+.intropic {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media only screen and (max-width:1200px) and (min-width:500px) {
+  .intropic {
+    width:50%;
+    margin:auto;
+  }
+  .introcaption {
+    text-align:center;
+  }
+}
+
+a {
+  color: white;
+}
+
+@media only screen and (min-width: 1200px) {
+  .boxes {
+    margin: 30px 80px 80px 80px;
+    column-gap: 60px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.timeline {
+  margin-bottom: 60px;
+  padding: 15px 30px 30px 30px;
+  border: 2px solid;
+  flex: 1 3 auto;
+}
+
+.timeline em {
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.timeline p {
+  font-style: italic;
+}
+
+.timeline h2 {
+  text-align: center;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.timeline ul {
+  padding-left: 15px;
+}
+
+.rightcontainer {
+  flex: 1 2 auto;
+}
+
+.sideinfo {
+  margin-bottom: 60px;
+  padding: 15px 30px 30px 30px;
+  border: 2px solid;
+}
+
+.sideinfo h2 {
+  text-align: center;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.sideinfo ul {
+  padding-left: 15px;
+}
+
+.sideinfo img {
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.extralinks {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1px 15px 1px 15px;
+  color: black;
+  background-color: white;
+}
+
+footer p {
+  font-weight: bold;
+}
+
+footer a {
+  color: black;
+}
+
