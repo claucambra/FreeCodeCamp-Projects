@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Site Feedback Form Demo</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <header>
+    <h1 id="title">Site feedback form</h1>
+      <p id="description">Please tell me how you liked (or didn't like!) the site.<p>
+  </header>
+  
+  <form id="survey-form">
+    
+    <div class="inputdiv" id="section1">
+      <label id="dropdown-label" for="dropdown">Pick a site:</label>
+      <select name="dropdown" id="dropdown" class="dropdown" required>
+        <option value="bourdain">Anthony Bourdain Tribute</option>
+        <option value="corgi">Corgi Express</option>
+        <option value="fpga">FPGA Intro Documentation</option>
+        <option value="portfolio">Personal Portfolio</option>
+        <option value="other">Other feedback</option>
+      </select>
+      <label id="email-label" for="email">E-mail:</label>
+      <input type="email" name="email" id="email" class="text-input" placeholder="myaddress@email.com" required>
+      <br>
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" name="name" id="name" class="text-input" placeholder="John Spelunky" required>
+      <p id="explainer">Your e-mail and name aren't required, and will only be used to update you on changes to the selected website.</p>
+    </div>
+    
+    <div class="inputdiv">
+      <fieldset>
+        <legend>Did you find the website useful?</legend>
+        <input type="radio" name="usefulness" id="usefulness-yes" class="radio-input" value="yes">
+        <label id="usefulness-yes-label" for="usefulness-yes">Yes</label>
+        <br>
+        <input type="radio" name="usefulness" id="usefulness-somewhat" class="radio-input" value="somewhat">
+        <label id="usefulness-somewhat-label" for="usefulness-somewhat">Somewhat</label>
+        <br>
+        <input type="radio" name="usefulness" id="usefulness-no" class="radio-input" value="no">
+        <label id="usefulness-no-label" for="usefulness-no">No</label>
+        <!--- name parameter links the different inputs together --->
+      </fieldset>
+    </div>
+     
+    <div class="inputdiv">
+      <fieldset>
+        <legend>Please select the statements below you agree with:</legend>
+        <input type="checkbox" name="ease" id="ease" value="ease" class="checkbox">
+        <label for="ease">I found the website easy to use.</label>
+        <br>
+        <input type="checkbox" name="info" id="info" value="info" class="checkbox">
+        <label for="info">I was able to find the information I was looking for.</label>
+        <br>
+        <input type="checkbox" name="aesthetics" id="aesthetics" value="aesthetics" class="checkbox">
+        <label for="aesthetics">The website's design was aesthetically pleasing to me.</label>
+        <br>
+        <input type="checkbox" name="return" id="return" value="return" class="checkbox">
+        <label for="return">It is likely that I will return to this website.</label>
+        <br>
+      </fieldset>
+    </div>
+    
+    <div class="inputdiv">
+      <fieldset>
+        <legend>Give us a score out of 10.</legend>
+        <label for="number" id="number-label">Only values between 0 and 10 are allowed.</label><br>
+        <input type="number" id="number" name="number" min="0" max="10" placeholder="10!!">
+      </fieldset>
+    </div>
+    
+    <div>
+      <fieldset>
+        <legend>Feel free to provide further feedback.</legend>
+        <textarea rows="4" name="extra" id="extra">
+        </textarea>
+      </fieldset>
+    </div>
+    
+    <input type="submit" id="submit" onclick="alert('This website is just a demo, so I won\'t actually receive any of your data.\nFeel free to shoot me an e-mail, though!')">
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  padding: 5% 10% 10% 10%;
+  border: 2px solid black;
+  border-radius: 5px;
+  max-width: 750px;
+  margin: 5px auto 5px auto;
+}
+
+#section1 {
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+#dropdown-label {
+  grid-area: 1/1/span 1/span 1;
+}
+
+#dropdown {
+  grid-area:1/2/span 1/span 1;
+}
+
+#email-label {
+  grid-area:2/1/span 1/span 1;
+}
+
+#email {
+  grid-area:2/2/span 1/span 1;
+}
+
+#name-label {
+  grid-area: 3/1/span 1/span 1;
+}
+
+#name {
+  grid-area:3/2/span 1/span 1;
+}
+
+#explainer {
+  grid-area: 4/1/span 1/span 2;
+}
+
+@media only screen and (max-width:390px) {
+  #section1{
+    display:flex;
+    flex-direction:column;
+  }
+}
+
+textarea{
+  width:100%;
+}
+
+#submit {
+  margin: 20px auto 20px auto;
+}
