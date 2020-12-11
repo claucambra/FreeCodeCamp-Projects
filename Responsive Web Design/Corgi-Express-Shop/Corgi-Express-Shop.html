@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Corgi Express</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+
+	<body>
+	  <header id="header">
+	    <div class="logo">
+	      <div id="logo-wrapper">
+		<img id="header-img" src="images/corgi-banner.jpg">
+	      </div>
+	      <div id="title-wrapper">
+		<h1>Corgi Express</h1>
+	      </div>
+	    </div>
+	    <nav id="nav-bar">
+	      <div class="nav-link">
+		<a href="#facts">Facts</a>
+	      </div>
+	      <div class="nav-link">
+		<a href="#showcase">How they work</a>
+	      </div>
+	      <div class="nav-link">
+		<a href="#pricing">Pricing</a>
+	      </div>
+	    </nav>
+	  </header>
+	  
+	  <main>
+	    <form id="form" action="https://www.freecodecamp.org/email-submit">
+	      <h2>Enter your e-mail to subscribe to Corgi facts!</h2>
+	      <input type="email" name="email" id="email" placeholder="doggo@corgifacts.com"><input type="submit" id="submit" value="Subscribe">
+	      <img src="images/corgi-pc.png">
+	    </form>
+	    
+	    <div class="facts" id="facts">
+	      <div class="iconfact" id="iconfood">
+		<svg viewBox="0 0 512 512" width="100" title="drumstick-bite">
+	  <path d="M462.8 49.57a169.44 169.44 0 0 0-239.5 0C187.82 85 160.13 128 160.13 192v85.83l-40.62 40.59c-9.7 9.69-24 11.07-36.78 6a60.33 60.33 0 0 0-65 98.72C33 438.39 54.24 442.7 73.85 438.21c-4.5 19.6-.18 40.83 15.1 56.1a60.35 60.35 0 0 0 98.8-65c-5.09-12.73-3.72-27 6-36.75L234.36 352h85.89a187.87 187.87 0 0 0 61.89-10c-39.64-43.89-39.83-110.23 1.05-151.07 34.38-34.36 86.76-39.46 128.74-16.8 1.3-44.96-14.81-90.28-49.13-124.56z" />
+	</svg>
+	      </div>
+	      <div class="textfact">
+		<h3>Corgis have a big appetite!</h3>
+		<p>These little guys like to eat. A LOT. In order to keep them healthy, you'll have to keep them active, or they'll become real chonky real soon!<br>Remember that a little bit of chonkyness is cute and all, but you want to make sure your doggo remains healthy.</p>
+	      </div>
+	      
+	      <div class="iconfact" id="iconplay">
+		<svg viewBox="0 0 640 512" width="100" title="gamepad">
+	  <path d="M480.07 96H160a160 160 0 1 0 114.24 272h91.52A160 160 0 1 0 480.07 96zM248 268a12 12 0 0 1-12 12h-52v52a12 12 0 0 1-12 12h-24a12 12 0 0 1-12-12v-52H84a12 12 0 0 1-12-12v-24a12 12 0 0 1 12-12h52v-52a12 12 0 0 1 12-12h24a12 12 0 0 1 12 12v52h52a12 12 0 0 1 12 12zm216 76a40 40 0 1 1 40-40 40 40 0 0 1-40 40zm64-96a40 40 0 1 1 40-40 40 40 0 0 1-40 40z" />
+	</svg>
+	      </div>
+	      <div class="textfact">
+		<h3>These doggos love to play.</h3>
+		<p>Maybe it's from the sugar high these guys get from all the food they eat, but corgis LOVE to play. They love to run around, jump around, and play around. So, if you are looking to get one, make sure you carve out some time in your daily schedule to play with the little guy and take him out for a walk.</p>
+	      </div>
+	      
+	      <div class="iconfact" id="icondog">
+		<svg viewBox="0 0 576 512" width="100" title="dog">
+	  <path d="M298.06,224,448,277.55V496a16,16,0,0,1-16,16H368a16,16,0,0,1-16-16V384H192V496a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V282.09C58.84,268.84,32,233.66,32,192a32,32,0,0,1,64,0,32.06,32.06,0,0,0,32,32ZM544,112v32a64,64,0,0,1-64,64H448v35.58L320,197.87V48c0-14.25,17.22-21.39,27.31-11.31L374.59,64h53.63c10.91,0,23.75,7.92,28.62,17.69L464,96h64A16,16,0,0,1,544,112Zm-112,0a16,16,0,1,0-16,16A16,16,0,0,0,432,112Z" />
+	</svg>
+	      </div>
+	      <div class="textfact">
+		<h3>They may be smol, but they are also big floofs.</h3>
+		<p>Corgi's coats have two layers: an outer layer that is course and protects them from the elements, and an inner layer that is soft and light. Because they are such floofs, they need to be brushed daily and should be given extra baths during shedding season.</p>
+	      </div>
+	      
+	      <div class="iconfact" id="iconhealth">
+		<svg viewBox="0 0 384 512" width="100" title="prescription-bottle-alt">
+	  <path d="M360 0H24C10.8 0 0 10.8 0 24v48c0 13.2 10.8 24 24 24h336c13.2 0 24-10.8 24-24V24c0-13.2-10.8-24-24-24zM32 480c0 17.6 14.4 32 32 32h256c17.6 0 32-14.4 32-32V128H32v352zm64-184c0-4.4 3.6-8 8-8h56v-56c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v56h56c4.4 0 8 3.6 8 8v48c0 4.4-3.6 8-8 8h-56v56c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8v-56h-56c-4.4 0-8-3.6-8-8v-48z" />
+	</svg>
+	      </div>
+	      <div class="textfact">
+		<h3>Corgos live on average for 60 human years!</h3>
+		<p>Corgis have a lifespan averaging between 11 and 13 years. They are considered seniors after becoming 8. Make sure you keep your pup healthy so that he may enjoy his later years too!</p>
+	      </div>
+	    </div>
+	    
+	    <div class="showcase" id="showcase">
+	      <h2>More about the Corgi</h2>
+	      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/sE5m5t3PnKw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    </div>
+	    
+	    <div class="pricing" id="pricing">
+	      <h2>Corgi Pricing</h2>
+	      <div class="tier-wrapper">
+		<div class="corgi-tier">
+		    <div class="corgi-tier-header">
+		    <h3>Smol Corgi</h3>
+		    <h4>€600</h4>
+		    <img src="images/smol-corgi.jpg">
+		  </div>
+		  <div class="corgi-tier-text">
+		    <button type="button">Adopt me!</button>
+		    <h4>Maximum kewtness per square inch</h4>
+		    <p>They might drive you nuts while you bust your butt potty-training them but you'll look at their kewt lil' faces and you'll tell yourself it's all worth it. Cus' they're so damn kewt.</p>
+		  </div>
+		</div>
+		
+		<div class="corgi-tier">
+		  <div class="corgi-tier-header">
+		    <h3>Mid Corgi</h3>
+		    <h4>€800</h4>
+		    <img src="images/mid-corgi.jpg">
+		  </div>
+		  <div class="corgi-tier-text">
+		    <button type="button">Adopt me!</button>
+		    <h4>One good boi</h4>
+		    <p>Just because he's the middle child doesn't mean he's any less fun. Get a spritely, short-legged bundle of love. And yes, little orange ball is most definitely included.</p>
+		  </div>
+		</div>
+		
+		<div class="corgi-tier">
+		  <div class="corgi-tier-header">
+		    <h3>Chonky Corgi</h3>
+		    <h4>€1000</h4>
+		    <img src="images/chonky-corgi.jpg">
+		  </div>
+		  <div class="corgi-tier-text">
+		   <button type="button">Adopt me!</button>
+		   <h4>Biggest bang for your buck!</h4>
+		    <p>What you see is what you get, and what you get here is a whole lot of corgi. Don't worry though: he may be a chonky boi, but he's also a healthy boi. Just big-boned. Wait till you see his butt.</p>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	  </main>
+	  
+	  <footer>
+	    <div>
+	      <h4>CC. 2020</h4>
+	    </div>
+	  </footer>
+	</body>
+
+</html>
