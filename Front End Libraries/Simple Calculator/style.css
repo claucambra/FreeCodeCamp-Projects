@@ -1,0 +1,63 @@
+html {
+	font-family: 'Noto Sans', sans-serif;
+	background-color: #00B0FF;
+	background-image: linear-gradient(to right, #4FC3F7, #1565C0);
+}
+
+#container {
+	background-color: rgba(255,255,255,0.7);
+	backdrop-filter: blur(2px);
+	max-width: 400px;
+	padding:3px;
+	margin:auto;
+	margin-top:24vh;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+h2 {
+	font-weight: normal;
+}
+
+
+.deleterButton {
+	flex: 1 1 0;
+	background-color: rgba(255,255,255,0.5);
+	border: 0;
+	cursor: pointer;
+}
+.deleterButton:hover {
+	background-color: rgba(255,255,255,0.9);
+}
+
+.opButton {
+	flex: 1 1 0;
+	background-color: rgba(255,255,255,0.5);
+	border: 0;
+	cursor: pointer;
+}
+.opButton:hover {
+	background-color: rgba(255,255,255,0.9);
+}
+
+.numButton {
+	background-color: rgba(255,255,255,0.9);
+	border: 0;
+	cursor: pointer;
+}
+.numButton:hover {
+	background-color: rgba(255,255,255,1);
+}
+
+#negativeButton {
+	background-color: rgba(255,255,255,0.5);
+}
+#negativeButton:hover {
+	background-color: rgba(255,255,255,0.9);
+}
+
+#decimal {
+	background-color: rgba(255,255,255,0.5);
+}
+#decimal:hover {
+	background-color: rgba(255,255,255,0.9);
+}
