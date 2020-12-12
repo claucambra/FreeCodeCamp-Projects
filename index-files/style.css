@@ -1,0 +1,24 @@
+html {
+	font-family: sans-serif;
+	background-color: #FBAB7E;
+	background-image: linear-gradient(32deg, #FBAB7E 0%, #F7CE68 100%);
+	color: white;
+}
+
+body {
+	max-width: 800px;
+	padding: 20px 40px 20px 40px;
+	margin: auto;
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+.tile-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 20px;
+}
+
+.project-tile {
+	
+}
