@@ -20,5 +20,8 @@ body {
 }
 
 .project-tile {
+	cursor: pointer;
+}
+.project-tile:hover {
 	
 }
