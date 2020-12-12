@@ -31,6 +31,7 @@ main {
 }
 
 /*I know this is dumb. I know this breaks the styling on certain resolutions. But it's what FreeCodeCamp's tests demands.*/
+#welcome-section {
   height:100vh;
   display:flex;
   column-gap:20px;
