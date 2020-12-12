@@ -61,6 +61,7 @@ class MarkdownPreviewer extends React.Component {
 	}
 	
 	updatePreview(event) {
+		event.persist();
 		if (event.target.value != "") {
 			this.setState(state => state.content = event.target.value)
 		}
@@ -69,7 +70,6 @@ class MarkdownPreviewer extends React.Component {
 		}
 		
 	}
-	
 	
 	render() {
 		return (
