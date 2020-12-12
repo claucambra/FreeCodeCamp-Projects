@@ -30,8 +30,7 @@ main {
   background-color: white;
 }
 
-<!-- I know this is dumb. I know this breaks the styling on certain resolutions. But it's what FreeCodeCamp's tests demands. -->
-#welcome-section {
+/*I know this is dumb. I know this breaks the styling on certain resolutions. But it's what FreeCodeCamp's tests demands.*/
   height:100vh;
   display:flex;
   column-gap:20px;
@@ -132,3 +131,18 @@ main {
   align-items:center;
   column-gap:20px;
 }
+
+@media not all and (min-resolution:.001dpcm) { @media { 
+	.nav-link:not(:last-child) {
+		margin-right: 20px;
+	}
+	.profile-link:not(:last-child) {
+		margin-right:20px;
+	}
+}}
+
+@media not all and (min-resolution:.001dpcm) { @media screen and (max-width: 750px) {
+	.introshowcase:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}}
