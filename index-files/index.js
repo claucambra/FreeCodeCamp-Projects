@@ -15,7 +15,7 @@ function linkSwitcher(element) {
 			window.open("https://elchupacambra.github.io/FreeCodeCamp-Projects/Responsive\ Web\ Design/Personal Portfolio Site/portfolio.html");
 			break;
 		case "feedback":
-			window.open("https://elchupacambra.github.io/FreeCodeCamp-Projects/Responsive\ Web\ Designn/Site\ Feedback\ Form/Site-feedback-form.html");
+			window.open("https://elchupacambra.github.io/FreeCodeCamp-Projects/Responsive\ Web\ Design/Site\ Feedback\ Form/Site-feedback-form.html");
 			break;
 		//Front End Libraries
 		case "clock":
