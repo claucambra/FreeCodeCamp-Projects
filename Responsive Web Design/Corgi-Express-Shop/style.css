@@ -236,13 +236,16 @@ footer {
 	.nav-link:not(:last-child) {
 		margin-right: 20px;
 	}
-	.tier-wrapper > * {
+	.corgi-tier:not(:last-child) {
 		margin-right:20px;
 	}
 } }
 
 @media not all and (min-resolution:.001dpcm) { @media screen and (max-width: 500px) {
 	.logo {
-		margin-bottom: 20px;
+		margin-bottom: 60px;
+	}
+	.corgi-tier:not(:last-child) {
+		margin-bottom:20px;
 	}
 }}
