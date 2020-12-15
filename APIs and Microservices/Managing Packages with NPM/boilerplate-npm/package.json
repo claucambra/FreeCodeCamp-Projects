@@ -1,6 +1,7 @@
 {
 	"name": "fcc-learn-npm-package-json",
 	"author": "Claudio Cambra",
+	"description": "Doing the steps for the second lesson!",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
