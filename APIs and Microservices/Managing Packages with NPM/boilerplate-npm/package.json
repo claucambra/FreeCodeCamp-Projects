@@ -2,6 +2,7 @@
 	"name": "fcc-learn-npm-package-json",
 	"author": "Claudio Cambra",
 	"description": "Doing the steps for the second lesson!",
+	"keywords": ["freecodecamp", "NPM", "lesson", "4"],
 	"dependencies": {
 		"express": "^4.14.0"
 	},
