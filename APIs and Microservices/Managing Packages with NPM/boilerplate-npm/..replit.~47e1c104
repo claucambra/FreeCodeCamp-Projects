@@ -23,3 +23,13 @@
   <s:exception>OCA\DAV\Connector\Sabre\Exception\FileLocked</s:exception>
   <s:message>"Programming/GitHub/FreeCodeCamp-Projects/APIs and Microservices/Managing Packages with NPM/boilerplate-npm/.replit" is locked</s:message>
 </d:error>
+<?xml version="1.0" encoding="utf-8"?>
+<d:error xmlns:d="DAV:" xmlns:s="http://sabredav.org/ns">
+  <s:exception>OCA\DAV\Connector\Sabre\Exception\FileLocked</s:exception>
+  <s:message>"Programming/GitHub/FreeCodeCamp-Projects/APIs and Microservices/Managing Packages with NPM/boilerplate-npm/.replit" is locked</s:message>
+</d:error>
+<?xml version="1.0" encoding="utf-8"?>
+<d:error xmlns:d="DAV:" xmlns:s="http://sabredav.org/ns">
+  <s:exception>OCA\DAV\Connector\Sabre\Exception\FileLocked</s:exception>
+  <s:message>"Programming/GitHub/FreeCodeCamp-Projects/APIs and Microservices/Managing Packages with NPM/boilerplate-npm/.replit" is locked</s:message>
+</d:error>

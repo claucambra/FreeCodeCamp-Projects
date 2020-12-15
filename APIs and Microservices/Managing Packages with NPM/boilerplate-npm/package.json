@@ -6,6 +6,8 @@
 	"dependencies": {
 		"express": "^4.14.0"
 	},
+	"license": "GPLv3",
+	"version": "0.5",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
