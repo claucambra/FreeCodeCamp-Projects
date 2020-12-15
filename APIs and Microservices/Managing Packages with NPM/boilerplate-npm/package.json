@@ -4,8 +4,7 @@
 	"description": "Doing the steps for the second lesson!",
 	"keywords": ["freecodecamp", "NPM", "lesson", "4"],
 	"dependencies": {
-		"express": "^4.14.0",
-		"moment": "~2.10.2"
+		"express": "^4.14.0"
 	},
 	"license": "GPLv3",
 	"version": "0.5.0",
