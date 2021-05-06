@@ -4,4 +4,4 @@ My projects for FreeCodeCamp's Courses.
 
 Projects for each course are held in their own subfolders. Feel free to prod through the code!
 
-## [View my websites for the Responsive Web Design and Front End Libraries courses](https://elchupacambra.github.io/FreeCodeCamp-Projects/)
+## [View my websites for the Responsive Web Design and Front End Libraries courses](https://claucambra.github.io/FreeCodeCamp-Projects/)
